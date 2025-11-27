@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TumtumclothingApplication<tumtumclothing>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.ropa.tumtumclothing.TumtumclothingApplication",
+            "projectName": "tumtumclothing",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+.registro-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.registro-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registro-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.registro-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.registro-container input,
+.registro-container select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.registro-container input[type="date"] {
+  color: #555;
+}
+
+.registro-container button {
+  background-color: #000;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.registro-container button:hover {
+  background-color: #333;
+}
+
+.login-link {
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

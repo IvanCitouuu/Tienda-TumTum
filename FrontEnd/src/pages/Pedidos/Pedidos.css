@@ -1,0 +1,382 @@
+.pedidos-page {
+    min-height: 80vh;
+    padding: 20px;
+    background-color: #f8f9fa;
+    width: 100%;
+}
+
+.pedidos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.pedidos-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.pedidos-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.pedidos-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+.pedidos-content {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sin-pedidos {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.sin-pedidos h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sin-pedidos p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.btn-comprar {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-comprar:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.pedido-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.pedido-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: #000000;
+}
+
+.pedido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #000;
+}
+
+.pedido-info h3 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.estado {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.estado-pendiente {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.estado-procesando {
+    background: #d1edff;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.estado-enviado {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.estado-entregado {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #b8daff;
+}
+
+.estado-cancelado {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.pedido-fecha {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.pedido-detalles {
+    padding-top: 15px;
+}
+
+.detalle-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.productos-lista {
+    margin-top: 15px;
+}
+
+.productos-lista h4 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.producto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.producto-item:last-child {
+    border-bottom: none;
+}
+
+.producto-info {
+    flex: 2;
+}
+
+.producto-nombre {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.producto-talla {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.producto-precios {
+    flex: 1;
+    text-align: right;
+}
+
+.producto-cantidad {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.producto-subtotal {
+    display: block;
+    font-weight: 600;
+    color: #000;
+    font-size: 1rem;
+}
+
+.sin-detalles {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.cargando {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1.2rem;
+    color: #666;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.error-container {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.error-container h3 {
+    color: #dc3545;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.error-container p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.btn-reintentar {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-reintentar:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* ========== Telefono ========== */
+@media (max-width: 768px) {
+    .pedidos-page {
+        padding: 15px;
+    }
+    
+    .pedidos-container {
+        padding: 0;
+    }
+    
+    .pedidos-content {
+        padding: 20px;
+    }
+    
+    .pedidos-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .pedido-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .pedido-fecha {
+        margin-top: 0;
+    }
+    
+    .producto-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .producto-precios {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .sin-pedidos {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pedidos-page {
+        padding: 10px;
+    }
+    
+    .pedidos-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .pedidos-content {
+        padding: 15px;
+    }
+    
+    .pedido-card {
+        padding: 15px;
+    }
+    
+    .pedido-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .detalle-total {
+        font-size: 1.1rem;
+    }
+    
+    .producto-nombre {
+        font-size: 1rem;
+    }
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 8px 0;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 6px 0;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+}

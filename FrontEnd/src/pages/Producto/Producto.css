@@ -1,0 +1,554 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+header nav {
+    justify-self: start;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .logo {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+header .logo img {
+    max-height: 80px;
+    width: auto;
+}
+
+header .acciones {
+    display: flex;
+    justify-self: end;
+    gap: 15px;
+}
+
+header .acciones a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.detalle-producto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.detalle-producto img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.info h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.selector-talla {
+  margin-bottom: 1.5rem;
+}
+
+.selector-talla label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.selector-talla select {
+  width: 100%;
+  max-width: 100px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.selector-cantidad {
+  margin-bottom: 1.5rem;
+}
+
+.selector-cantidad label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.controles-cantidad {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.controles-cantidad button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.controles-cantidad button:hover:not(:disabled) {
+  background-color: #000;
+  color: white;
+}
+
+.controles-cantidad button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.controles-cantidad span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}
+
+.precio-total {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  padding: 0.5rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+  color: #000;
+}
+
+.agregar-carrito {
+  background: #000000;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.agregar-carrito:hover {
+  background: #333333;
+}
+
+.seguir-comprando {
+  background: transparent;
+  color: #333;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.seguir-comprando:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
+
+.tabla-talles {
+  margin-top: 1px;
+}
+
+.tabla-talles h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.tabla-talles table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-talles th,
+.tabla-talles td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.tabla-talles th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.opciones {
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    margin-top: auto;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.perfil span {
+  font-weight: bold;
+  color: #333;
+}
+
+#cerrar-sesion {
+  padding: 6px 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 32px;
+  font-size: 1rem;
+}
+
+.perfil-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.perfil-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.icono-perfil {
+  width: 25px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.saludo-usuario {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.menu-perfil {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 10px;
+  z-index: 1000;
+  min-width: 150px;
+  font-size: 0.9rem;
+}
+
+.menu-perfil a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.menu-perfil a:hover {
+  background-color: #000000;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* ========== Telefono ========== */
+
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: auto 1fr auto;
+    padding: 0px 15px;
+    position: relative;
+  }
+
+  header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    display: none;
+    z-index: 1000;
+  }
+
+  header nav.active {
+    display: block;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+  }
+
+  header nav ul li {
+    display: block;
+    text-align: center;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+  }
+
+  header .logo img {
+    max-height: 60px;
+  }
+
+  header .acciones {
+    gap: 10px;
+  }
+
+  .menu-hamburguesa {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .detalle-producto {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .detalle-producto img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .info {
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .info h1 {
+    font-size: 1.5rem;
+  }
+
+  .precio {
+    font-size: 1.25rem;
+  }
+
+  .selector-talla select {
+    max-width: 80px;
+  }
+
+  .controles-cantidad button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .agregar-carrito,
+  .seguir-comprando {
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
+
+  footer {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .perfil-trigger .saludo-usuario {
+    display: none;
+  }
+
+  .menu-perfil {
+    right: -10px;
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0px 10px;
+  }
+
+  header .logo img {
+    max-height: 50px;
+  }
+
+  .detalle-producto {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .info h1 {
+    font-size: 1.3rem;
+  }
+
+  .precio {
+    font-size: 1.1rem;
+  }
+
+  .selector-talla,
+  .selector-cantidad {
+    margin-bottom: 1rem;
+  }
+
+  .controles-cantidad {
+    gap: 0.5rem;
+  }
+
+  .controles-cantidad button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .precio-total {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .agregar-carrito,
+  .seguir-comprando {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .tabla-talles table {
+    font-size: 0.9rem;
+  }
+
+  .tabla-talles th,
+  .tabla-talles td {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 360px) {
+  header {
+    padding: 0px 8px;
+  }
+
+  header .logo img {
+    max-height: 45px;
+  }
+
+  .detalle-producto {
+    padding: 8px;
+  }
+
+  .info h1 {
+    font-size: 1.2rem;
+  }
+
+  .precio {
+    font-size: 1rem;
+  }
+
+  .controles-cantidad button {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .controles-cantidad span {
+    font-size: 1rem;
+  }
+}
+
+.menu-hamburguesa {
+  display: none;
+}
+
+.ocultar-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-hamburguesa {
+    display: block;
+  }
+  
+  .ocultar-en-mobile {
+    display: none !important;
+  }
+}
